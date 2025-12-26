@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dillu Bhai VIP</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family:Poppins,Arial,sans-serif;
+    background:radial-gradient(circle at top,#fff2b8,#e8d27a);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Card */
+.container{
+    width:94%;
+    max-width:380px;
+    background:#fff7d8;
+    border-radius:20px;
+    padding:25px 20px 30px;
+    text-align:center;
+    border:4px solid #c9a300;
+    box-shadow:0 0 30px rgba(201,163,0,0.7);
+}
+
+/* Profile */
+.profile img{
+    width:115px;
+    height:115px;
+    border-radius:50%;
+    border:4px solid #c9a300;
+    box-shadow:0 0 20px rgba(201,163,0,0.9);
+    object-fit:cover;
+}
+
+/* Headings */
+h1{
+    margin:15px 0 6px;
+    font-size:26px;
+    color:#0b2c57;
+}
+
+.subs{
+    font-size:16px;
+    font-weight:600;
+    color:#000;
+}
+
+.desc{
+    margin-top:6px;
+    font-size:17px;
+    font-weight:700;
+    color:#0b2c57;
+}
+
+/* Countdown button */
+.timer{
+    margin-top:20px;
+    background:linear-gradient(45deg,#ff004f,#ff2f6d);
+    color:#fff;
+    padding:14px;
+    border-radius:10px;
+    font-weight:800;
+    box-shadow:0 0 20px rgba(255,0,79,1);
+    cursor:pointer;
+    text-decoration:none;
+    display:block;
+}
+
+/* Telegram button */
+.telegram{
+    display:block;
+    margin-top:18px;
+    padding:16px;
+    border-radius:50px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:900;
+    background:linear-gradient(45deg,#00b8ff,#007bff);
+    box-shadow:0 0 25px rgba(0,123,255,1);
+    animation:glow 1.5s infinite alternate;
+}
+
+@keyframes glow{
+    from{box-shadow:0 0 15px rgba(0,123,255,0.6);}
+    to{box-shadow:0 0 35px rgba(0,123,255,1);}
+}
+
+/* Footer */
+.footer{
+    margin-top:18px;
+    font-size:14px;
+    font-weight:700;
+    color:#000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="https://dillu.in/wp-content/uploads/2025/12/IMG_20251216_202929_860.jpg">
+    </div>
+
+    <h1>Dillu Bhai</h1>
+
+    <div class="subs">34,995 Subscribers</div>
+
+    <div class="desc">All Game VIP Charts Available Here</div>
+
+    <!-- Countdown clickable -->
+    <a href="https://t.me/+uCUtviilxIViMWQ1" class="timer" id="countdown">
+        Free Joining Ends In 10 Seconds
+    </a>
+
+    <!-- Telegram button -->
+    <a href="https://t.me/+uCUtviilxIViMWQ1" class="telegram">
+        JOIN FREE TELEGRAM
+    </a>
+
+    <div class="footer">
+        SIRF 3 DIN HAMARE SATH KAAM KARKE DEKHO
+    </div>
+
+</div>
+
+<script>
+let time = 10;
+const countdown = document.getElementById("countdown");
+
+setInterval(() => {
+    if(time > 0){
+        time--;
+        countdown.innerHTML = "Free Joining Ends In " + time + " Seconds";
+    }
+},1000);
+</script>
+
+</body>
+</html>
